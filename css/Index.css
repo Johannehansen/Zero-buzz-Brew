@@ -9,21 +9,27 @@
        --denim: #2c60bb;
        --dodgerblue: #3392ff;
        --white: #ffffff;
-       --frenchgray: #a8a9ad;
+       --gray: #ededed;
        --black: #000000;
        --coquelicot: #ff3000;
        --persimmon: #f35b04;
        --orange: #f47e3e;
    }
 
-   header {
+   html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+header {
     max-width: 100%;
-    position: sticky;
     top: 0;
+    color: black;
+    margin-bottom: 3%;
 }
 
 #headerbillede {
-    max-width: 75%;
+    max-width: 70%;
     height: auto;
     margin-right: auto;
     margin-top: 15%;
@@ -49,16 +55,76 @@ nav, .menupunkter {
 }
 
 body {
-    background-image: url(/Images/baggrundsbilledetilforsiden.gif);
-    background-size: 100%;
-    background-position: center;
     font-family: 'roboto';
+    text-align: center;
+}
+
+#blob {
+    margin-top: -90%;
+    width: 100%;
+    height: auto;
+    right: 0;
+    left: 0;
+    position: relative;
+    z-index: -1;
 }
 
 .animatics {
-    position: absolute;
+    position: relative;
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
+h2{
+    font-family: 'roboto';
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.product-section {
+    background: var(--gray);
+    border-radius: 7%;
+    border-color: var(--coquelicot);
+    border-style: groove;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flexbox;
+    margin-left: 60%;
+    margin-top: -56%;
+    z-index: 0;
+}
+
+.produkter {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin: 20px;
+    
+}
+
+.Billeder img {
+    width: 100%;
+}
+
+
+button {
+    background-color: var(--persimmon);
+    color: white;
+    border: none;
+    padding: 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--persimmon);
+}
+
+footer{
+    background-color: #ff3000;
+}
 
