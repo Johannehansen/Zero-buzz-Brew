@@ -1,0 +1,36 @@
+header {
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 0 2%;
+}
+
+#headerbillede {
+    max-width: 20%;
+    height: auto;
+    margin-right: auto;
+    margin-top: 0.8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menupunkter a {
+    font-size: 200%;
+    color: var(--Sort);
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.menupunkter a:hover {
+    color: var(--Sand);
+}
+
+body {
+    font-family: 'roboto';
+}
