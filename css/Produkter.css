@@ -1,3 +1,15 @@
+:root {
+    /* Farvepalette: */
+       --denim: #2c60bb;
+       --dodgerblue: #3392ff;
+       --white: #ffffff;
+       --frenchgray: #a8a9ad;
+       --black: #000000;
+       --coquelicot: #ff3000;
+       --persimmon: #f35b04;
+       --orange: #f47e3e;
+   }
+
 html {
     overflow-x: hidden;
     width: 100%;
@@ -33,6 +45,7 @@ nav, .menupunkter {
     white-space: nowrap;
     font-weight: bold;
     padding-left: 20%;
+    color: var(--black);
 }
 
 body {
@@ -51,13 +64,14 @@ body {
 
 .produktcontainer {
     max-width: 68%; /* Justér efter behov */
-    margin: 30% -2%;
+    margin: 0 -2%;
     background-color: #ededed;
     border-radius: 15px;
     border: 3px solid #ff3000;
     text-align: center;
     margin-right: 20%;
     padding: 2% 0;
+    margin-top: 30%;
 }
 
 h2 {
@@ -93,3 +107,23 @@ h2 {
     max-width: 50%;
 }
 
+.quiz-button {
+    background-color: #0093ff;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    font-size: 1.7rem;
+    border-radius: 0 15px 15px 0;
+    margin: 0 -2%;
+    padding: 2%;
+    text-decoration: none;
+}
+
+.quiz-button span {
+    text-decoration: underline;
+}
+
+.knap {
+    margin-top: 10%;
+    max-width: 100%;
+}
