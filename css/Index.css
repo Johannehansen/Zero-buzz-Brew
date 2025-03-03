@@ -16,9 +16,43 @@
        --orange: #f47e3e;
    }
 
+   header {
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+#headerbillede {
+    max-width: 75%;
+    height: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    margin-left: 45%;
+}
+
+nav, .menupunkter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar {
+    margin-right: 43%;
+}
+
+.menupunkter a {
+    font-size: 200%;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: bold;
+    padding-left: 20%;
+}
+
 body {
     background-image: url(/Images/baggrundforside.png);
     background-size: 100%;
     background-position: center;
+    font-family: 'roboto';
 }
+
 
