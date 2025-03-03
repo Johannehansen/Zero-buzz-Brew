@@ -1,0 +1,20 @@
+/**
+ * file: css/index.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+:root {
+    /* Farvepalette: */
+       --denim: #2c60bb;
+       --dodgerblue: #3392ff;
+       --white: #ffffff;
+       --frenchgray: #a8a9ad;
+       --black: #000000;
+       --coquelicot: #ff3000;
+       --persimmon: #f35b04;
+       --orange: #f47e3e;
+   }
+
+
+
