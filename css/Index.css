@@ -1,5 +1,5 @@
 /**
- * file: css/index.css
+ * file: css/Index.css
  * purpose: styling
  **/
 
@@ -17,4 +17,9 @@
    }
 
 
+body {
+    background-image: url("Images/baggrundforside.png");
+    background-size: cover;
+    background-position: center;
+}
 
