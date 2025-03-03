@@ -1,11 +1,11 @@
 header {
     max-width: 100%;
-    position: sticky;
+    position: relative;
     top: 0;
 }
 
 #headerbillede {
-    max-width: 75%;
+    max-width: 70%;
     height: auto;
     margin-right: auto;
     margin-top: 15%;
@@ -32,4 +32,11 @@ nav, .menupunkter {
 
 body {
     font-family: 'roboto';
+}
+
+#blob {
+    margin-top: 4%;
+    width: 100vw;
+    height: auto;
+    right: 0;
 }
