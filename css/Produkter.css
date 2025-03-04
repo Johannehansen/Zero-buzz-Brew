@@ -13,6 +13,7 @@
 html {
     overflow-x: hidden;
     width: 100%;
+    height: 100%;
 }
 
 header {
@@ -50,6 +51,9 @@ nav, .menupunkter {
 
 body {
     font-family: 'roboto';
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 #blob {
@@ -126,4 +130,59 @@ h2 {
 .knap {
     margin-top: 10%;
     max-width: 100%;
+}
+
+footer{
+    margin-top: -8rem;
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin-top: -40%;
+}
+
+.footerindhold {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3rem;
+    margin-top: 20%;
+    color: var(--white);
+}
+
+.findos {
+    margin-top: -3rem;
+}
+
+.somelogoer{
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.somelogoer img {
+    height: 3rem;
+}
+
+h3{
+    font-family: 'roboto';
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--white);
+}
+
+p {
+    font-family: 'roboto';
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.footer-section {
+    margin-top: -3rem;
+}
+
+#footerprodukter {
+    z-index: -1000;
+    object-fit: cover;
+    max-height: 100%;
 }
