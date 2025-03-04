@@ -133,15 +133,18 @@ h2 {
 }
 
 footer{
-    margin-top: -8rem;
+    margin-top: 10%;
     width: 100%;
     position: relative;
-    left: 0;
 }
 
 .footerindhold {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    gap: 200%;
+    bottom: 0;
     padding-left: 3%;
     padding-right: 3rem;
     margin-top: 20%;
@@ -149,7 +152,7 @@ footer{
 }
 
 .findos {
-    margin-top: -3rem;
+    margin-top: 0%;
 }
 
 .somelogoer{
@@ -177,7 +180,7 @@ p {
 }
 
 .footer-section {
-    margin-top: -3rem;
+    margin-top: 0;
 }
 
 #footerprodukter {
