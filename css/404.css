@@ -1,0 +1,110 @@
+/* Define variables in the :root */
+:root {
+    /* Farvepalette: */
+       --denim: #2c60bb;
+       --dodgerblue: #3392ff;
+       --white: #ffffff;
+       --gray: #ededed;
+       --black: #000000;
+       --coquelicot: #ff3000;
+       --persimmon: #f35b04;
+       --orange: #f47e3e;
+   }
+
+   html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+header {
+    max-width: 100%;
+    top: 0;
+    margin-bottom: 3%;
+}
+
+#headerbillede {
+    max-width: 70%;
+    height: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    margin-left: 45%;
+}
+
+nav, .menupunkter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar {
+    margin-right: 43%;
+}
+
+.menupunkter a {
+    font-size: 200%;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: bold;
+    padding-left: 20%;
+    color: var(--black);
+}
+
+body {
+    font-family: 'roboto';
+    text-align: center;
+}
+
+.produktcontainer {
+    max-width: 68%; /* Justér efter behov */
+    margin: 0 -2%;
+    background-color: #ededed;
+    border-radius: 15px;
+    border: 3px solid #ff3000;
+    text-align: center;
+    margin-right: 20%;
+    padding: 2% 0;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.billede404 img {
+    width: 14rem;
+    margin-top: 20%;
+}
+
+h1 {
+    font-family: 'roboto';
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+
+p {
+    font-family: 'roboto';
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.forside-button {
+    background-color: #0093ff;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 0 -2%;
+    padding: 3%;
+    text-decoration: none;
+}
+
+.knap {
+    margin-top: 12%;
+    margin-bottom: 10%;
+    max-width: 100%;
+}
