@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Øl-Quiz</title>
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="question" class="question">Hvornår drikker du? I sociale eller sportslige sammenhænge?</div>
+        <div id="options" class="option-container">
+            <div class="option" onclick="nextQuestion('Sport')">Sport</div>
+            <div class="option" onclick="nextQuestion('Social')">Social</div>
+        </div>
+        <img id="resultImg" class="result-img" style="display: none;" alt="Din øl">
+        <a id="backButton" class="back-button" href="Produkter.html" style="display: none;">Gå tilbage til produkter</a>
+    </div>
+
+    <script src="js.js" defer></script>
+</body>
+</html>
