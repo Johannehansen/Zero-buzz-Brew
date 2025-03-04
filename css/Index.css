@@ -59,6 +59,10 @@ body {
     text-align: center;
 }
 
+main {
+    flex-grow: 1;
+}
+
 #blob {
     margin-top: 0%;
     width: 100%;
