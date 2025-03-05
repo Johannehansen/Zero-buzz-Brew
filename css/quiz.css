@@ -1,5 +1,23 @@
+/**
+ * file: css/quiz.css
+ * purpose: styling
+ **/
+
+/* Definerer variabler i :root for genanvendelige farver */
+:root {
+    /* Farvepalette: */
+       --denim: #2c60bb;
+       --dodgerblue: #3392ff;
+       --white: #ffffff;
+       --gray: #ededed;
+       --black: #000000;
+       --coquelicot: #ff3000;
+       --persimmon: #f35b04;
+       --orange: #f47e3e;
+   }
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "roboto", Helvetica, sans-serif;
     text-align: center;
     background-color: #fff;
     color: #000;

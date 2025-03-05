@@ -1,27 +1,36 @@
+/**
+ * file: css/produkter.css
+ * purpose: styling
+ **/
+
+/* Definerer variabler i :root for genanvendelige farver */
 :root {
     /* Farvepalette: */
        --denim: #2c60bb;
        --dodgerblue: #3392ff;
        --white: #ffffff;
-       --frenchgray: #a8a9ad;
+       --gray: #ededed;
        --black: #000000;
        --coquelicot: #ff3000;
        --persimmon: #f35b04;
        --orange: #f47e3e;
-   }
+}
 
+/* Grundlæggende styling for HTML der forhindrer horisontalt scrool */
 html {
     overflow-x: hidden;
     width: 100%;
     height: 100%;
 }
 
+/* Styling af header */
 header {
     max-width: 100%;
     top: 0;
     margin-bottom: 3%;
 }
 
+/* Styling og placering logo */
 #headerbillede {
     max-width: 70%;
     height: auto;
@@ -30,16 +39,19 @@ header {
     margin-left: 45%;
 }
 
+/* Flex af navigationsbaren og menupunkterne */
 nav, .menupunkter {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
+/* Placering af navigationsbaren */
 .navbar {
     margin-right: 43%;
 }
 
+/*Styling og placering af menupunkterne*/
 .menupunkter a {
     font-size: 200%;
     text-decoration: none;
@@ -49,13 +61,15 @@ nav, .menupunkter {
     color: var(--black);
 }
 
+/*Typografi og placering til menupunkterne*/
 body {
-    font-family: 'roboto';
+    font-family: "roboto", Helvetica, sans-serif;  
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
+/* Styling og placering af bølge-baggrund */
 #blob {
     margin-top: 3%;
     width: 100%;
@@ -66,12 +80,13 @@ body {
     z-index: -1;
 }
 
+/* Styling og placering af container på siden*/
 .produktcontainer {
-    max-width: 68%; /* Justér efter behov */
+    max-width: 68%;
     margin: 0 -2%;
-    background-color: #ededed;
+    background-color: var(--gray);
     border-radius: 15px;
-    border: 3px solid #ff3000;
+    border: 3px solid var(--coquelicot);
     text-align: center;
     margin-right: 20%;
     padding: 2% 0;
@@ -79,12 +94,15 @@ body {
     padding-top: 6%;
 }
 
+/* Typografi, størrelse og udseende på tekst*/
 h2 {
+    font-family: "roboto", Helvetica, sans-serif;  
     font-size: 4rem;
     font-weight: bold;
     margin-top: -1%;
 }
 
+/*Placering og flex af alt indhold i containeren så det står under hinanden*/
 .produkter {
     display: flex;
     flex-direction: column;
@@ -93,6 +111,7 @@ h2 {
     gap: 20px;
 }
 
+/*Flex af billeder og tekst i container*/
 .produkt {
     display: flex;
     align-items: center;
@@ -101,21 +120,32 @@ h2 {
     flex: 1;
 }
 
+/*Størrelse på billeder i container*/
 .produkt img {
-    max-width: 32%; /* Justér billedstørrelse */
+    max-width: 32%;
 }
 
+/*Hover effekt på billederne*/
+.produkt img:hover{
+    transform:scale(1.1);
+    transition: .5s ease;
+  }
+
+/* Typografi, størrelse og udseende på tekst*/
 .produkt p {
     flex: 1;
+    font-family: "roboto", Helvetica, sans-serif;  
     font-size: 1.2rem;
     text-align: center;
     max-width: 50%;
     line-height: 2.5rem;
 }
 
+/*Styling af knap under container*/
 .quiz-button {
     background-color: var(--dodgerblue);
     border: none;
+    font-family: "roboto", Helvetica, sans-serif;  
     color: var(--white);
     width: 100%;
     font-size: 1.7rem;
@@ -126,16 +156,18 @@ h2 {
     text-decoration: none;
 }
 
+/*Placerer en streg under ordet "her" på knappen*/
 .quiz-button span {
     text-decoration: underline;
 }
 
+/*Placering af knap*/
 .knap {
     margin-top: 10%;
     max-width: 100%;
 }
 
-
+/* Styling og placering af bølge-baggrund lige over footeren */
 #footerprodukter {
     margin-top: 10%;
     width: 100%;
@@ -144,11 +176,13 @@ h2 {
     left: 0;
 }
 
+/*Baggrundsfarve og placering af footer, så den hænger sammen med bølgen*/
 footer{
     background-color: #ff6a07;
     margin-top: -5rem;
 }
 
+/*Flex og placering af indhold i footeren*/
 .footerindhold {
     display: flex;
     justify-content: space-between;
@@ -156,36 +190,42 @@ footer{
     padding-right: 3rem;
 }
 
+/*Placering af SOME logoer (venstre side i footeren)*/
 .findos {
     margin-top: -3rem;
 }
 
+/*Flex af SOME logoer og mellemrum imellem dem*/
 .somelogoer{
     display: flex;
     justify-content: space-between;
     gap: 10%;
 }
 
+/*Størrelse på SOME logoer*/
 .somelogoer img {
     height: 3rem;
 }
 
+/* Typografi, størrelse og udseende på tekst*/
 h3{
-    font-family: 'roboto';
+    font-family: "roboto", Helvetica, sans-serif;  
     text-align: center;
     font-size: 2rem;
     font-weight: 900;
     color: var(--white);
 }
 
+/* Typografi, størrelse og udseende på tekst*/
 .footer-section p {
-    font-family: 'roboto';
+    font-family: "roboto", Helvetica, sans-serif;  
     color: var(--white);
     font-weight: 400;
     line-height: 2rem;
     text-align: center;
 }
 
+/*Placering af kontakt infomationer (højre side i footeren)*/
 .footer-section {
     margin-top: -3rem;
 }

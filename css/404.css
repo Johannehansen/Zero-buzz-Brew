@@ -1,4 +1,9 @@
-/* Define variables in the :root */
+/**
+ * file: css/404.css
+ * purpose: styling
+ **/
+
+/* Definerer variabler i :root for genanvendelige farver */
 :root {
     /* Farvepalette: */
        --denim: #2c60bb;
@@ -11,17 +16,20 @@
        --orange: #f47e3e;
    }
 
-   html {
+/* Grundlæggende styling for HTML der forhindrer horisontalt scrool */
+html {
     overflow-x: hidden;
     width: 100%;
 }
 
+/* Styling af header */
 header {
     max-width: 100%;
     top: 0;
     margin-bottom: 3%;
 }
 
+/* Styling og placering logo */
 #headerbillede {
     max-width: 70%;
     height: auto;
@@ -30,16 +38,19 @@ header {
     margin-left: 45%;
 }
 
+/* Flex af navigationsbaren og menupunkterne */
 nav, .menupunkter {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
+/* Placering af navigationsbaren */
 .navbar {
     margin-right: 43%;
 }
 
+/*Styling og placering af menupunkterne*/
 .menupunkter a {
     font-size: 200%;
     text-decoration: none;
@@ -49,13 +60,15 @@ nav, .menupunkter {
     color: var(--black);
 }
 
+/*Typografi og placering til menupunkterne*/
 body {
-    font-family: 'roboto';
+    font-family: "roboto", Helvetica, sans-serif;
     text-align: center;
 }
 
+/* Styling og placering af container lige under headeren samt flex af indhold */
 .produktcontainer {
-    max-width: 68%; /* Justér efter behov */
+    max-width: 68%;
     margin: 0 -2%;
     background-color: #ededed;
     border-radius: 15px;
@@ -70,26 +83,30 @@ body {
     padding-right: 5%;
 }
 
+/*Størrelse og flex af billede i container*/
 .billede404 img {
     width: 14rem;
     margin-top: 20%;
 }
 
+/* Typografi, størrelse og udseende på tekst*/
 h1 {
-    font-family: 'roboto';
+    font-family: "roboto", Helvetica, sans-serif;
     text-align: center;
     font-size: 2.3rem;
     font-weight: 900;
 }
 
+/* Typografi, størrelse og udseende på tekst*/
 p {
-    font-family: 'roboto';
+    font-family: "roboto", Helvetica, sans-serif;
     text-align: center;
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 2.5rem;
 }
 
+/*Styling af knap i container*/
 .forside-button {
     background-color: #0093ff;
     border: none;
@@ -103,6 +120,7 @@ p {
     text-decoration: none;
 }
 
+/*Placering af knap*/
 .knap {
     margin-top: 12%;
     margin-bottom: 10%;
