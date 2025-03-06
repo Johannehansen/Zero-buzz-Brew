@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Øl-Quiz</title>
+    <!-- Font fra google: https://fonts.google.com/specimen/Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/quiz.css">
 </head>
 <body>
+
+<!-- Her er sitets logo og menupunkter-->
+<header>
+    <nav>
+        <a href="index.html"><img id="headerbillede" src="/Images/Logo.png" alt="ZBB logo"></a>
+    </nav>
+</header>
+
+    <img src="Images/blob4.png" alt="blob" id="blob">
+
     <div class="quiz-container">
-        <div id="question" class="question">Hvornår drikker du? I sociale eller sportslige sammenhænge?</div>
+        <div id="question" class="question">I hvilken sammenhæng drikker du alkoholfri øl?</div>
         <div id="options" class="option-container">
-            <div class="option" onclick="nextQuestion('Sport')">Sport</div>
-            <div class="option" onclick="nextQuestion('Social')">Social</div>
+            <div class="option" onclick="nextQuestion('Sport')">Sportslige sammenhænge</div>
+            <div class="option" onclick="nextQuestion('Social')">Sociale sammenhænge</div>
         </div>
         <img id="resultImg" class="result-img" style="display: none;" alt="Din øl">
         <a id="backButton" class="back-button" href="Produkter.html" style="display: none;">Gå tilbage til produkter</a>

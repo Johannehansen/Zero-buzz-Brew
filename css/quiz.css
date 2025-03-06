@@ -14,13 +14,30 @@
        --coquelicot: #ff3000;
        --persimmon: #f35b04;
        --orange: #f47e3e;
-   }
+}
 
 body {
     font-family: "roboto", Helvetica, sans-serif;
     text-align: center;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--white);
+    color: var(--black);
+    align-items: center;
+}
+
+/* Styling og placering logo */
+#headerbillede {
+    max-width: 15%;
+    height: auto;
+    margin-top: 2%;
+}
+
+#blob {
+    margin-top: -16%;
+    width: 13%;
+    height: auto;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 .quiz-container {
@@ -30,8 +47,9 @@ body {
 }
 
 .question {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
 }
 
 .option-container {
@@ -41,33 +59,44 @@ body {
 }
 
 .option {
-    background-color: #f0f0f0;
-    border: 2px solid #ff5500;
-    padding: 20px;
+    background-color: var(--gray);
+    border: 2px solid var(--coquelicot);
+    padding: 25px;
     border-radius: 10px;
-    width: 200px;
+    width: 350px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.3s;
 }
 
 .option:hover {
     background-color: #ff5500;
-    color: white;
+    color: var(--white);
 }
 
 .result-img {
-    margin-top: 20px;
+    margin-top: 5%;
     width: 200px;
     height: auto;
+    margin-left: 34%;
+    margin-bottom: 5%;
 }
 
 .back-button {
-    display: block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #ff5500;
-    color: white;
+    background-color: var(--dodgerblue);
+    border: none;
+    color: var(--white);
+    width: 60%;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
     text-decoration: none;
-    border-radius: 5px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 0 auto;
+}
+
+.back-button:hover {
+    background-color: #ff5500;
+    color: var(--white);
 }
