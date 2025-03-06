@@ -1,39 +1,63 @@
-// Øl-quiz (opbygget af function med step-tæller der viser hvilket spørgsmål der skal vises)
-let step = 1;
-let answers = [];
+let step = 1;  // Start på første spørgsmål
+let answers = []; // Array til at gemme svarene
 
-function nextQuestion(answer) {
-    answers.push(answer);
-
+// Funktion der opdaterer spørgsmålet baseret på step-værdien
+function showQuestion() {
     if (step === 1) { // første spørgsmål vises
-        document.getElementById('question').innerText = 'Hvilken slags øl foretrækker du normalt?'; // afventer input fra bruger
+        document.getElementById('question').innerText = 'Foretrækker du Pilsner, IPA eller Classic?';
         document.getElementById('options').innerHTML = ` 
             <div class="option" onclick="nextQuestion('Pilsner')">Pilsner</div>
             <div class="option" onclick="nextQuestion('IPA')">IPA</div>
             <div class="option" onclick="nextQuestion('Classic')">Classic</div> 
-        `; // ved onclick skifter spørgsmål i realtid
-    } else if (step === 2) { 
-        document.getElementById('question').innerText = 'Hvordan kan du bedst lide din øl?'; // afventer input fra bruger
+        `;
+    } else if (step === 2) { // andet spørgsmål
+        document.getElementById('question').innerText = 'Kan du lide din øl fyldig eller bitter?';
         document.getElementById('options').innerHTML = `
             <div class="option" onclick="nextQuestion('Fyldig')">Fyldig</div> 
             <div class="option" onclick="nextQuestion('Bitter')">Bitter</div>
-        `; // som ovenstående reagerer quizzen på onclick funktionen og der beregnes nu den perfekte øl som nedenstående viser:
-    } else if (step === 3) {
-        let result = `Din perfekte øl er en ${answers[1]} der er ${answers[2]}!`;
+        `;
+    } else if (step === 3) { // resultat
+        let result = `Din perfekte øl er en ${answers[0]} der er ${answers[1]}!`;
         document.getElementById('question').innerText = result;
         document.getElementById('options').innerHTML = '';
-        // nedenfor er der implementeret en src-attribut for at gøre quizzen mere visuel
+        
         let imgSrc = '';
-        if (answers[1] === 'Pilsner') imgSrc = '/images/øl1.png';
-        else if (answers[1] === 'IPA') imgSrc = '/images/øl6.png';
-        else if (answers[1] === 'Classic') imgSrc = '/images/øl3.png';
 
+        // Man vælger billede baseret på øltype og fyldighed/bitterhed
+        if (answers[0] === 'Pilsner') {
+            if (answers[1] === 'Fyldig') imgSrc = '/images/øl1.png';
+            else if (answers[1] === 'Bitter') imgSrc = '/images/øl2.png';
+        } else if (answers[0] === 'IPA') {
+            if (answers[1] === 'Fyldig') imgSrc = '/images/øl5.png';
+            else if (answers[1] === 'Bitter') imgSrc = '/images/øl6.png';
+        } else if (answers[0] === 'Classic') {
+            if (answers[1] === 'Fyldig') imgSrc = '/images/øl3.png';
+            else if (answers[1] === 'Bitter') imgSrc = '/images/øl4.png';
+        }
+
+        // Sæt det valgte billede som resultatbillede
         document.getElementById('resultImg').src = imgSrc;
         document.getElementById('resultImg').style.display = 'block';
         document.getElementById('backButton').style.display = 'block';
     }
-    step++; // <-- stepvariabel som øges med 1 hver gang den køres.
 }
+
+// Funktion der kaldes når et svar vælges
+function nextQuestion(answer) {
+    answers.push(answer);  // Tilføj svaret til arrayet
+    step++; // Øg step for at gå videre til næste spørgsmål
+    showQuestion(); // Opdater spørgeskemaet
+}
+
+// Funktion til at starte quizzen forfra
+function restartQuiz() {
+    step = 1;  // Nulstil step
+    answers = [];  // Tøm svarene
+    showQuestion(); // Opdater til første spørgsmål
+}
+
+// Start quizzen ved at vise første spørgsmål
+showQuestion();
 
 
 document.getElementById("cta-button").addEventListener("click", function() {
