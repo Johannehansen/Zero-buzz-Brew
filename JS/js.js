@@ -3,6 +3,7 @@ let answers = []; // Array til at gemme svarene
 
 // Funktion der opdaterer spørgsmålet baseret på step-værdien
 function showQuestion() {
+    
     if (step === 1) { // første spørgsmål vises
         document.getElementById('question').innerText = 'Hvornår drikker du? I sportslige eller sociale sammenhænge?';
         document.getElementById('options').innerHTML = ` 
