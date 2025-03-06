@@ -3,6 +3,7 @@ let answers = []; // Array til at gemme svarene
 
 // Funktion der opdaterer spørgsmålet baseret på step-værdien
 function showQuestion() {
+    
     if (step === 1) { // første spørgsmål vises
         document.getElementById('question').innerText = 'Foretrækker du Pilsner, IPA eller Classic?';
         document.getElementById('options').innerHTML = ` 
@@ -58,10 +59,3 @@ function restartQuiz() {
 
 // Start quizzen ved at vise første spørgsmål
 showQuestion();
-
-
-document.getElementById("cta-button").addEventListener("click", function() {
-    window.location.href = "Produkter.html"; // Link til produktsiden
-})
-
-
